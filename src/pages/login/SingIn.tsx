@@ -35,24 +35,20 @@ if(result.data.status){
     <Container><Row>
       <Col  md={{ span: 4, offset: 4 }}>
       <Form onSubmit={submitHandler}>
-      <div className="form-floating">
-      <FormLabel htmlFor="email">Email Address</FormLabel>
         <FormControl
           required
           key="email"
           id="email"
-          placeholder="name@example.com"
+          placeholder="Email"
           type="email"
+          className="p-3"
         />
-      </div>
-      <div className="form-floating">
-      <FormLabel htmlFor="email">Password</FormLabel>
         <FormControl
           id="password"
           placeholder="Password"
           type="password"
+          className="p-3"
         />
-      </div>
       <Button className="w-100 btn btn-lg btn-danger" type="submit">
         Sign in
       </Button>
