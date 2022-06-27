@@ -1,0 +1,112 @@
+.content {
+  display: flex;
+  width: 100%;
+  padding: 5%;
+  gap: 5%;
+  flex-wrap: wrap;
+
+
+  .content-left {
+    .poster {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgb(0, 0, 0);
+    }
+  }
+
+  .content-right {
+    margin-top: 50px;
+    max-width: 950px;
+
+    .favorite-button {
+      background: none;
+      border: none;
+      color: rgb(182, 50, 103);
+
+      .false {
+        display: none;
+      }
+
+      &:hover {
+        .false {
+          display: inline-flex;
+        }
+
+        .true {
+          display: none;
+        }
+      }
+    }
+
+    .favori {
+      .true {
+        display: none;
+      }
+
+      .false {
+        display: inline-flex;
+      }
+
+      &:hover {
+        .true {
+          display: inline-flex;
+        }
+
+        .false {
+          display: none;
+        }
+      }
+    }
+
+    h4 {
+
+      font-size: 35px;
+    }
+  }
+}
+
+.comment-content {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  padding-top: 0;
+  width: 100%;
+  h1{
+    font-size: larger;
+  }
+
+  .commnets {
+    .comment {
+      border-top: 1px solid black;
+
+      h1 {
+        margin-top: 5px;
+        font-size: medium;
+      }
+
+      span {
+        font-size: small;
+        color: rgb(84, 84, 84);
+      }
+    }
+  }
+
+  .commnet-send {
+    textarea {
+      padding: 2%;
+      width: 100%;
+      border-radius: 15px;
+      border:1px solid rgb(158, 152, 152);
+      resize: none;
+      &:focus-visible{
+        outline: none !important;
+      }
+    }
+
+    button {
+      float: right;
+    }
+
+  }
+}

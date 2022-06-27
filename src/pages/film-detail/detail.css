@@ -1,0 +1,115 @@
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 5%;
+  gap: 5%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.content .content-left .poster {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 2px 8px black;
+          box-shadow: 0 2px 8px black;
+}
+
+.content .content-right {
+  margin-top: 50px;
+  max-width: 950px;
+}
+
+.content .content-right .favorite-button {
+  background: none;
+  border: none;
+  color: #b63267;
+}
+
+.content .content-right .favorite-button .false {
+  display: none;
+}
+
+.content .content-right .favorite-button:hover .false {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.content .content-right .favorite-button:hover .true {
+  display: none;
+}
+
+.content .content-right .favori .true {
+  display: none;
+}
+
+.content .content-right .favori .false {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.content .content-right .favori:hover .true {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.content .content-right .favori:hover .false {
+  display: none;
+}
+
+.content .content-right h4 {
+  font-size: 35px;
+}
+
+.comment-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5%;
+  padding-top: 0;
+  width: 100%;
+}
+
+.comment-content h1 {
+  font-size: larger;
+}
+
+.comment-content .commnets .comment {
+  border-top: 1px solid black;
+}
+
+.comment-content .commnets .comment h1 {
+  margin-top: 5px;
+  font-size: medium;
+}
+
+.comment-content .commnets .comment span {
+  font-size: small;
+  color: #545454;
+}
+
+.comment-content .commnet-send textarea {
+  padding: 2%;
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid #9e9898;
+  resize: none;
+}
+
+.comment-content .commnet-send textarea:focus-visible {
+  outline: none !important;
+}
+
+.comment-content .commnet-send button {
+  float: right;
+}
+/*# sourceMappingURL=detail.css.map */
